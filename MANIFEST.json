@@ -8,7 +8,7 @@
     "hits": [],
     "status": "PASS"
   },
-  "file_count_excluding_manifest": 39,
+  "file_count_excluding_manifest": 37,
   "files_excluding_manifest": [
     {
       "bytes": 57,
@@ -171,16 +171,6 @@
       "sha256": "ce78c397732aa80d80b61e1ba4cee9d788c4617e742b34a1eb6e0347953bc1e6"
     },
     {
-      "bytes": 287,
-      "path": "src/__pycache__/__init__.cpython-313.pyc",
-      "sha256": "0307ffbf3cd75dddbf27ae581526df6b3c45f15fabca6d5532e8182ac27c3d0f"
-    },
-    {
-      "bytes": 18910,
-      "path": "src/__pycache__/reproduce_manuscript_artifacts.cpython-313.pyc",
-      "sha256": "010f882d83cd59ba331019f88a1039d4c11f2bd9862b05dbcc6abf3f8c516c1f"
-    },
-    {
       "bytes": 599,
       "path": "src/reporting_only.py",
       "sha256": "3997aa24c0efa3eaa75686a94bf550713ce6ef11a4429ecb23a2bc5113c27eff"
@@ -226,7 +216,7 @@
   "sensitivity_calls": 0,
   "simulation_calls": 0,
   "solver_calls": 0,
-  "total_bytes_excluding_manifest": 6571923,
+  "total_bytes_excluding_manifest": 6552726,
   "weather": {
     "author_license_applied": false,
     "bytes": 598052,
