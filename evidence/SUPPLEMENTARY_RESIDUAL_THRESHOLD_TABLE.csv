@@ -1,0 +1,4 @@
+policy,maximum_absolute_electrical_residual_kW,electrical_tolerance_kW,electrical_fraction_of_tolerance,maximum_absolute_hydrogen_residual_kg,hydrogen_tolerance_kg,hydrogen_fraction_of_tolerance,hours_above_either_tolerance
+C1,9.941725522821798e-07,1e-06,0.9941725522821798,1.7763568394002505e-15,1e-09,1.7763568394002503e-06,0
+C2,2.2737367544323206e-13,1e-06,2.2737367544323206e-07,0.0,1e-09,0.0,0
+C3,2.2737367544323206e-13,1e-06,2.2737367544323206e-07,0.0,1e-09,0.0,0

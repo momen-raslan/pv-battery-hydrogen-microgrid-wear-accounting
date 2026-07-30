@@ -1,0 +1,4 @@
+Case,Off_peak_import_USD,Peak_import_USD,Peak_surcharge_USD,Total_import_USD,Export_revenue_USD,H2_revenue_USD,Carbon_USD,Direct_balance_USD,Battery_wear_USD,PEMEL_wear_USD,PEMFC_wear_USD,Total_common_wear_USD,Direct_plus_common_wear_USD,Memo_reconciliation_USD
+C1,26839,600,200,27440,67111,115524,0,-155195,57591,10064,171657,239312,84117,104.13
+C2,11914,12405,4135,24319,131966,607,0,-108254,2527,1506,57,4090,-104165,0.95
+C3,11914,12405,4135,24319,131965,607,9528,-98725,2530,1506,113,4150,-94575,0.90

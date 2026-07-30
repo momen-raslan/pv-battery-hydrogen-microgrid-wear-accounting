@@ -1,0 +1,40 @@
+requirement,disclosed_value,location,authoritative_source,status
+Sampling interval,1 h,Main Sec. 2.1; Supplement Sec. 2,config.py DT_S,pass
+Executed horizon,H=8,Main Sec. 2.1; Supplement Sec. 2,annual_campaign.py; runner,pass
+Electrical balance/sign,Nonnegative directional variables,Main Eq. 1; Supplement Eq. S1,optimizer_mpc.py,pass
+Scheduled/realized distinction,Four layers explicit,Main Fig. 1; Supplement Sec. 1,main_simulation.py; reconciliation.py,pass
+Battery state equation,Scheduled and replay equations,Main Eq. 2; Supplement Eqs. S2-S3,optimizer_mpc.py; plant_models.py,pass
+Battery efficiencies,0.95/0.95,Main Sec. 2.2; Supplement Sec. 2.2,config.py BAT,pass
+Battery self-discharge,1e-5 h^-1,Supplement Eq. S3,config.py BAT,pass
+Battery bounds,SoC 0.10-0.95; +/-500 kW,Main Sec. 2.2; Supplement Sec. 2.2,config.py BAT/SIZE,pass
+Faded-capacity replay,Explicit,Main Sec. 2.2; Supplement Eq. S3,plant_models.py Battery.step,pass
+PEMEL scheduled conversion,0.65 LHV / 33.33 kWh kg^-1,Main Eq. 3; Supplement Eq. S4,optimizer_mpc.py,pass
+PEMEL threshold,6 kW,Main Sec. 2.2; Supplement Sec. 2.3,plant_models.py,pass
+PEMEL degradation,Equation and five coefficients,Supplement Eq. S5 and Table S2,degradation_models.py; config.py,pass
+Tank equation/bounds,15-142.5 kg,Main Eq. 4; Supplement Eq. S6,optimizer_mpc.py; config.py,pass
+Joint allocation/clipping,Proportional eligible withdrawals,Main Sec. 2.2; Supplement Sec. 2.4,main_simulation.py,pass
+Shortage definition,Commanded minus allocable PEMFC H2,Main Sec. 4.1; Supplement Eq. S7,main_simulation.py,pass
+PEMFC hydrogen/power map,Faraday plus increasing polarization branch,Main Eq. 5; Supplement Eq. S8,plant_models.py; optimizer_mpc.py,pass
+PEMFC 200/177.088 distinction,Economic versus BOL physical,Main Sec. 2.1; Supplement Sec. 2.5,plant_models.py,pass
+PEMFC geometry,270 cells x 1000 cm2,Main Sec. 2.2; Supplement Sec. 2.5,config.py FC,pass
+PEMFC degradation regions/events,"Low/medium/high, startup, load change",Supplement Eq. S9,degradation_models.py,pass
+Grid relaxation,Continuous import/export plus 1e-5 penalty,Main Secs. 2.2/2.4; Supplement Eq. S10,optimizer_mpc.py,pass
+Battery relaxation,Continuous charge/discharge plus 1e-3 penalty,Main Secs. 2.2/2.4; Supplement Eq. S10,optimizer_mpc.py,pass
+PEMEL/PEMFC loop,Continuous plus 1e-3 penalty,Main Sec. 2.4; Supplement Eq. S10,optimizer_mpc.py,pass
+Grid-timed H2 sale penalty,6(Pimp/300)msale,Main Sec. 2.4; Supplement Eq. S10,optimizer_mpc.py,pass
+Sale fraction,60% of same-hour scheduled/realized production,Main Sec. 2.2; Supplement Sec. 2.4,optimizer_mpc.py; main_simulation.py,pass
+Terminal SoC band,+/-0.2; 1000 USD/unit slack,Main Sec. 2.4; Supplement Sec. 2.6,optimizer_mpc.py,pass
+Terminal tank band,+/-40 kg; 500 USD/kg slack,Main Sec. 2.4; Supplement Sec. 2.6,optimizer_mpc.py,pass
+Carbon term,pCO2*0.49*import/1000,Main Eq. 8; Supplement Eq. S10,optimizer_mpc.py,pass
+Policy definitions,C1 zero degradation; C2 degradation; C3 + carbon,Main Table 1,annual policy inputs,pass
+Degradation multipliers/units,0 or 1; surrogate coefficients in USD per damage,Main Sec. 2.4; Supplement Sec. 2.6,optimizer_mpc.py,pass
+Fixed temperatures,Battery 298.15 K; PEMEL 353.15 K; PEMFC 343.15 K; tank 313.15 K,Supplement Table S2,config.py,pass
+Curtailment,Unpenalized replay outcome,Main Sec. 2.2; Supplement Sec. 2.6,reconciliation.py,pass
+Objective components,Complete component definition and values,Supplement Eq. S10 and Table S4,audit objective components,pass
+No hard binaries/min-up/down/ramp,Explicitly disclaimed,Main Sec. 2.2; Supplement Sec. 2.6,optimizer_mpc.py,pass
+Battery cost/EOL,384000 USD; 20%,Supplement Table S2,config.py; degradation_models.py,pass
+PEMEL cost/EOL,600000 installed; 66000 stack; 0.19 V/cell,Main Sec. 2.4; Supplement Table S2,config.py; degradation_models.py,pass
+PEMFC cost/EOL,600000 USD; 0.066 V/cell,Supplement Table S2,config.py; degradation_models.py,pass
+Economic boundary,Included/excluded table,Main Table 2,metric dictionary,pass
+Load provenance,"Deterministic synthetic office load, scaled",Main Sec. 2.1,config.py load_office_load fallback,pass
+Hydrogen auxiliaries,Outside boundary,Main Sec. 2.2; Table 2,model inventory,pass

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this staged research artifact, cite the associated article after publication."
+title: "Direct operating economics versus asset preservation in a PV-rich battery-hydrogen microgrid"
+type: software
+version: "0.1.0-presubmission"
+authors:
+  - family-names: Raslan
+    given-names: Momen M.
+    orcid: "https://orcid.org/0009-0001-7771-527X"
+  - family-names: Mansour
+    given-names: Diaa-Eldin A.
+    orcid: "https://orcid.org/0000-0002-3894-4299"
+  - family-names: Megahed
+    given-names: Tamer F.
+    orcid: "https://orcid.org/0000-0003-1411-5602"

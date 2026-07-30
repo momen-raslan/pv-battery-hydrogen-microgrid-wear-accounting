@@ -1,0 +1,2 @@
+comparison,alpha_star,C1_direct_USD,C2_direct_USD,C1_common_wear_USD,C2_common_wear_USD,C1_better_for_alpha,C2_better_for_alpha,dynamic_dispatch_sensitivity
+C1_equals_C2,0.199560396827326,-155195.14369421484,-108254.11154516738,239311.73909633677,4089.5562617765254,alpha < 0.199560396827326,alpha > 0.199560396827326,False

@@ -1,0 +1,52 @@
+{
+  "annual_physical_trajectories_changed": false,
+  "audit_comparison_sha256": "a4addc4c5ae12bfe67ad53c212a0c376422f4469f655e7e4efa9104d8e7d66fc",
+  "audit_full_physical_replay_sha256": "24228fd05792b01b0c1c49d092c4803b23b314bd8133b4244e29841b774e71df",
+  "common_wear_changed": false,
+  "correct_denominator_V_per_cell": 0.19,
+  "correction_type": "reporting-only denominator correction",
+  "degradation_accumulation_changed": false,
+  "direct_economics_changed": false,
+  "dispatch_changed": false,
+  "formula": "SoH_new = 1 - inferred_stack_voltage_loss / (100 cells * 0.19 V/cell)",
+  "immutable_authoritative_fields": [
+    "grid_import_kWh",
+    "grid_export_kWh",
+    "battery_throughput_kWh",
+    "pemel_electricity_kWh",
+    "pemfc_electricity_kWh",
+    "h2_produced_kg",
+    "h2_sold_kg",
+    "common_wear_total_USD",
+    "direct_realized_operating_economics_USD"
+  ],
+  "old_denominator_V_per_cell": 0.18,
+  "only_pemel_soh_reporting_changed": true,
+  "retained_hourly_source": {
+    "bytes": 1644352,
+    "path": "paper1/results/final_manuscript_typesetting_correction_20260727_081505_UTC/figure_source_data/FIGURE_4_HOURLY_SOH.csv",
+    "rows": 26280,
+    "sha256": "33496ca7cf9a9aa52003d547d3cc4c5b73b35c1942325fd0899bd449028cb6df"
+  },
+  "schema_version": "1.0",
+  "simulation_calls": 0,
+  "solver_calls": 0,
+  "status": "PASS",
+  "terminal_values": {
+    "C1": {
+      "corrected_pemel_soh_0p19": 0.8475178671273369,
+      "inferred_stack_voltage_loss_V": 2.8971605245806,
+      "old_pemel_soh_0p18": 0.8390466375233
+    },
+    "C2": {
+      "corrected_pemel_soh_0p19": 0.9771844256358931,
+      "inferred_stack_voltage_loss_V": 0.43349591291803136,
+      "old_pemel_soh_0p18": 0.975916893726776
+    },
+    "C3": {
+      "corrected_pemel_soh_0p19": 0.9771773221204717,
+      "inferred_stack_voltage_loss_V": 0.4336308797110371,
+      "old_pemel_soh_0p18": 0.975909395571609
+    }
+  }
+}

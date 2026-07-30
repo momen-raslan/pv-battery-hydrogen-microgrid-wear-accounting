@@ -1,0 +1,42 @@
+\begin{longtable}{p{0.095\textwidth}p{0.18\textwidth}p{0.08\textwidth}p{0.095\textwidth}p{0.095\textwidth}p{0.095\textwidth}p{0.11\textwidth}p{0.10\textwidth}}
+\caption{Complete C2--C3 single-policy-proxy delta ledger. Exact machine-readable values are retained in the accompanying CSV.}\label{tab:s-carbon}\\
+\toprule
+Category & Metric & Unit & C2 & C3 & $\Delta$ & $\Delta$ (\%) & Classification\\
+\midrule
+\endfirsthead
+\toprule
+Category & Metric & Unit & C2 & C3 & $\Delta$ & $\Delta$ (\%) & Classification\\
+\midrule
+\endhead
+policy control & carbon price & USD/tCO2 & 0 & 50 & 50 & -- & n/a (zero base) \\
+grid exchange & grid import & kWh & 388896.37 & 388907.96 & 11.587994 & 0.0029797125 & small (<1\%) \\
+grid exchange & grid export & kWh & 3179895.3 & 3179888.8 & -6.5670855 & -0.00020651892 & small (<1\%) \\
+emissions & grid emissions & tCO2 & 190.55922 & 190.5649 & 0.005678117 & 0.0029797125 & small (<1\%) \\
+economics & carbon transfer & USD & 0 & 9528.245 & 9528.245 & -- & n/a (zero base) \\
+economics & direct operating balance excluding carbon transfer & USD & -108254.11 & -108253.4 & 0.71339532 & 0.00065900067 & small (<1\%) \\
+economics & direct operating balance including carbon transfer & USD & -108254.11 & -98725.153 & 9528.9584 & 8.8023986 & not small \\
+wear proxy & battery common physical-wear proxy & USD & 2527.1193 & 2530.2927 & 3.1734569 & 0.12557606 & small (<1\%) \\
+wear proxy & PEMEL common physical-wear proxy & USD & 1505.8279 & 1506.2967 & 0.46883202 & 0.031134502 & small (<1\%) \\
+wear proxy & PEMFC common physical-wear proxy & USD & 56.609091 & 113.21818 & 56.609091 & 100 & not small \\
+wear proxy & total common physical-wear proxy & USD & 4089.5563 & 4149.8076 & 60.25138 & 1.4732987 & not small \\
+state of health & battery final SoH & fraction & 0.99868379 & 0.99868214 & -1.6528421e-06 & -0.00016550205 & small (<1\%) \\
+state of health & PEMEL final SoH & fraction & 0.97591689 & 0.9759094 & -7.4981552e-06 & -0.00076831903 & small (<1\%) \\
+state of health & PEMFC final SoH & fraction & 0.99990565 & 0.9998113 & -9.4348485e-05 & -0.0094357387 & small (<1\%) \\
+device energy & battery charge energy & kWh & 21.731378 & 358.56683 & 336.83545 & 1549.9958 & not small \\
+device energy & battery discharge energy & kWh & 762.9503 & 1066.9407 & 303.99036 & 39.844058 & not small \\
+device energy & battery throughput & kWh & 784.68168 & 1425.5075 & 640.82581 & 81.666977 & not small \\
+device energy & PEMEL electricity consumption & kWh & 9481.42 & 9466.73 & -14.689989 & -0.15493448 & small (<1\%) \\
+device energy & PEMFC electricity generation & kWh & 5.9240686e-05 & 8.0514817e-05 & 2.127413e-05 & 35.91135 & not small \\
+hydrogen & hydrogen production & kg & 168.67038 & 168.7367 & 0.066319787 & 0.039319166 & small (<1\%) \\
+hydrogen & hydrogen sales & kg & 101.18822 & 101.21498 & 0.026759269 & 0.026445044 & small (<1\%) \\
+reconciliation & net grid-import reconciliation & kWh & 18.435954 & 18.457483 & 0.021529668 & 0.11678087 & small (<1\%) \\
+reconciliation & grid-import reconciliation & kWh & 18.435994 & 18.457524 & 0.021529668 & 0.11678062 & small (<1\%) \\
+reconciliation & grid-export reconciliation & kWh & 4.0405529e-05 & 4.0405529e-05 & 0 & 0 & small (<1\%) \\
+reconciliation & reconciliation cost & USD & 0.94567236 & 0.90105729 & -0.044615067 & -4.7178144 & not small \\
+reconciliation & reconciliation emissions & tCO2 & 0.0046677195 & 0.0025235667 & -0.0021441527 & -45.935767 & not small \\
+candidate source distribution & feasible initial candidate accepted hours & hours & 8759 & 8758 & -1 & -0.011416828 & small (<1\%) \\
+candidate source distribution & gurobi local accepted hours & hours & 1 & 2 & 1 & 100 & not small \\
+solver route distribution & feasible initial candidate unoptimized hours & hours & 8759 & 8758 & -1 & -0.011416828 & small (<1\%) \\
+solver route distribution & gurobi only hours & hours & 1 & 2 & 1 & 100 & not small \\
+\bottomrule
+\end{longtable}

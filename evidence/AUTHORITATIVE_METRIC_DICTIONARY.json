@@ -1,0 +1,514 @@
+{
+  "common_wear_crossover": {
+    "absolute_recalculation_difference": 3.064215547965432e-14,
+    "alpha_star_full_precision": 0.199560396827326,
+    "alpha_star_recalculated_from_audit": 0.19956039682729534,
+    "formula": "(C2 direct - C1 direct) / (C1 common wear - C2 common wear)",
+    "manuscript_rounded": 0.2,
+    "scope": "ex-post valuation of fixed annual trajectories; no dispatch response or online-weight robustness is inferred"
+  },
+  "evidence_directory": "final_presubmission_correction_20260730_104248_UTC",
+  "fixed_case": {
+    "battery_EOL_capacity_loss_fraction": 0.2,
+    "battery_common_wear_formula": "384000 USD * annual capacity-loss fraction / 0.20",
+    "battery_installed_cost_USD": 384000.0,
+    "electrical_residual_tolerance_kW": 1e-06,
+    "executed_horizon_h": 8,
+    "hours_per_policy": 8760,
+    "hydrogen_residual_tolerance_kg": 1e-09,
+    "pemel_EOL_voltage_rise_per_cell_V_corrected": 0.19,
+    "pemel_installed_basis_USD_per_kW": 2000.0,
+    "pemel_installed_cost_USD": 600000.0,
+    "pemel_nominal_kW": 300.0,
+    "pemel_replaceable_stack_basis_USD": 66000.0,
+    "pemel_replaceable_stack_fraction": 0.11,
+    "pemfc_BOL_physical_maximum_kW": 177.088183412,
+    "pemfc_installed_basis_USD_per_kW": 3000.0,
+    "pemfc_installed_cost_USD": 600000.0,
+    "pemfc_nameplate_and_economic_basis_kW": 200.0,
+    "pv_to_load_energy_ratio": 3.799739151352873,
+    "sampling_interval_h": 1.0
+  },
+  "materiality_definition": {
+    "annual_energy_kWh": 1000.0,
+    "direct_operating_balance_USD": 100.0,
+    "hydrogen_kg": 1.0,
+    "operational_grid_import_emissions_tCO2": 0.1,
+    "rule": "A C2-C3 annual dispatch/reporting difference is material if any applicable absolute threshold is met; relative changes from tiny baselines are reported but do not override the absolute threshold.",
+    "state_of_health_fraction": 0.0001
+  },
+  "modeled_study_inputs": {
+    "C3_carbon_price_USD_per_tCO2": 50.0,
+    "export_tariff_USD_per_kWh": 0.0415,
+    "external_tariff_provenance_claimed": false,
+    "grid_import_emissions_factor_tCO2_per_MWh": 0.49,
+    "gross_hydrogen_sale_value_USD_per_kg": 6.0,
+    "offpeak_import_tariff_USD_per_kWh": 0.0519,
+    "peak_import_tariff_USD_per_kWh": 0.07785,
+    "peak_multiplier": 1.5,
+    "peak_period_local_time": "12:00 through 19:59",
+    "provenance_statement": "Tariffs and hydrogen value are modeled study assumptions; no external tariff-source claim is made in the manuscript."
+  },
+  "policies": {
+    "C1": {
+      "battery_throughput_kWh": 1849985.1105934214,
+      "carbon_cost_USD": 0.0,
+      "common_wear_battery_USD": 57590.92204059015,
+      "common_wear_pemel_USD": 10063.820769595479,
+      "common_wear_pemfc_USD": 171656.99628615114,
+      "common_wear_total_USD": 239311.73909633677,
+      "direct_ledger": {
+        "authoritative_direct_operating_balance_USD": -155195.14369421484,
+        "base_flat_import_cost_USD": 27239.486599273812,
+        "carbon_transfer_USD": 0.0,
+        "export_revenue_USD": 67110.65943872134,
+        "hydrogen_revenue_USD": 115524.03618918822,
+        "offpeak_import_cost_USD": 26839.355930431724,
+        "offpeak_import_kWh": 517135.9524167962,
+        "peak_base_cost_USD": 400.13066884209337,
+        "peak_import_cost_USD": 600.19600326314,
+        "peak_import_kWh": 7709.6467984989085,
+        "peak_period_local_hour": "12:00-19:59",
+        "peak_surcharge_USD": 200.06533442104669,
+        "policy": "C1",
+        "reconciliation_cost_USD_memo_only": 104.12936094687477,
+        "reconstructed_direct_operating_balance_USD": -155195.1436942147,
+        "reconstruction_error_USD": 1.4551915228366852e-10,
+        "tariff_provenance": "modeled study assumption",
+        "total_import_cost_USD": 27439.551933694864
+      },
+      "direct_plus_common_wear_proxy_USD": 84116.59540212192,
+      "direct_realized_operating_economics_USD": -155195.14369421484,
+      "final_battery_soh": 0.9700047281038594,
+      "final_pemel_soh_corrected_0p19": 0.8475178671273369,
+      "final_pemel_soh_original_0p18": 0.8390466375232999,
+      "final_pemfc_soh": 0.7139050061897318,
+      "genuine_h2_shortage_hours": 23.0,
+      "grid_export_kWh": 1617124.3238246148,
+      "grid_import_kWh": 524845.5992152964,
+      "h2_consumed_pemfc_kg": 12895.458987249009,
+      "h2_produced_kg": 32093.686322997313,
+      "h2_shortage_kg": 0.039745476893932374,
+      "h2_sold_kg": 19254.00603153139,
+      "pemel_electricity_kWh": 1815541.1760440022,
+      "pemfc_electricity_kWh": 202533.53750345536,
+      "reconciliation_cost_USD": 104.12936094687477,
+      "total_emissions_tonnes": 257.1743436154937
+    },
+    "C2": {
+      "battery_throughput_kWh": 784.6816819549971,
+      "carbon_cost_USD": 0.0,
+      "common_wear_battery_USD": 2527.1192628359827,
+      "common_wear_pemel_USD": 1505.8279080314517,
+      "common_wear_pemfc_USD": 56.6090909090909,
+      "common_wear_total_USD": 4089.5562617765254,
+      "direct_ledger": {
+        "authoritative_direct_operating_balance_USD": -108254.11154516738,
+        "base_flat_import_cost_USD": 20183.721582813403,
+        "carbon_transfer_USD": 0.0,
+        "export_revenue_USD": 131965.6557791732,
+        "hydrogen_revenue_USD": 607.1293143205855,
+        "offpeak_import_cost_USD": 11913.817651785026,
+        "offpeak_import_kWh": 229553.32662398895,
+        "peak_base_cost_USD": 8269.903931028375,
+        "peak_import_cost_USD": 12404.855896542564,
+        "peak_import_kWh": 159343.04298705925,
+        "peak_period_local_hour": "12:00-19:59",
+        "peak_surcharge_USD": 4134.951965514188,
+        "policy": "C2",
+        "reconciliation_cost_USD_memo_only": 0.9456723582900632,
+        "reconstructed_direct_operating_balance_USD": -108254.11154516619,
+        "reconstruction_error_USD": 1.1932570487260818e-09,
+        "tariff_provenance": "modeled study assumption",
+        "total_import_cost_USD": 24318.67354832759
+      },
+      "direct_plus_common_wear_proxy_USD": -104164.55528339086,
+      "direct_realized_operating_economics_USD": -108254.11154516738,
+      "final_battery_soh": 0.9986837920506062,
+      "final_pemel_soh_corrected_0p19": 0.9771844256358931,
+      "final_pemel_soh_original_0p18": 0.9759168937267757,
+      "final_pemfc_soh": 0.9999056515151515,
+      "genuine_h2_shortage_hours": 0.0,
+      "grid_export_kWh": 3179895.3199800886,
+      "grid_import_kWh": 388896.36961105,
+      "h2_consumed_pemfc_kg": 1.5987713735397407e-06,
+      "h2_produced_kg": 168.6703788832392,
+      "h2_shortage_kg": 0.0,
+      "h2_sold_kg": 101.18821905343093,
+      "pemel_electricity_kWh": 9481.419968680088,
+      "pemfc_electricity_kWh": 5.924068645278244e-05,
+      "reconciliation_cost_USD": 0.9456723582900632,
+      "total_emissions_tonnes": 190.5592211094126
+    },
+    "C3": {
+      "battery_throughput_kWh": 1425.5074920583734,
+      "carbon_cost_USD": 9528.244961321438,
+      "common_wear_battery_USD": 2530.292719691314,
+      "common_wear_pemel_USD": 1506.2967400492207,
+      "common_wear_pemfc_USD": 113.2181818181818,
+      "common_wear_total_USD": 4149.807641558717,
+      "direct_ledger": {
+        "authoritative_direct_operating_balance_USD": -98725.15318852584,
+        "base_flat_import_cost_USD": 20184.322999697295,
+        "carbon_transfer_USD": 9528.244961321438,
+        "export_revenue_USD": 131965.3832451241,
+        "hydrogen_revenue_USD": 607.2898699334597,
+        "offpeak_import_cost_USD": 11914.41906866892,
+        "offpeak_import_kWh": 229564.91461789826,
+        "peak_base_cost_USD": 8269.903931028375,
+        "peak_import_cost_USD": 12404.855896542564,
+        "peak_import_kWh": 159343.04298705925,
+        "peak_period_local_hour": "12:00-19:59",
+        "peak_surcharge_USD": 4134.951965514188,
+        "policy": "C3",
+        "reconciliation_cost_USD_memo_only": 0.9010572915946606,
+        "reconstructed_direct_operating_balance_USD": -98725.15318852464,
+        "reconstruction_error_USD": 1.2078089639544487e-09,
+        "tariff_provenance": "modeled study assumption",
+        "total_import_cost_USD": 24319.274965211484
+      },
+      "direct_plus_common_wear_proxy_USD": -94575.34554696713,
+      "direct_realized_operating_economics_USD": -98725.15318852584,
+      "final_battery_soh": 0.9986821392084941,
+      "final_pemel_soh_corrected_0p19": 0.9771773221204717,
+      "final_pemel_soh_original_0p18": 0.9759093955716094,
+      "final_pemfc_soh": 0.9998113030303031,
+      "genuine_h2_shortage_hours": 0.0,
+      "grid_export_kWh": 3179888.7528945687,
+      "grid_import_kWh": 388907.95760495926,
+      "h2_consumed_pemfc_kg": 2.172918466511515e-06,
+      "h2_produced_kg": 168.7366986703012,
+      "h2_shortage_kg": 0.0,
+      "h2_sold_kg": 101.2149783222433,
+      "pemel_electricity_kWh": 9466.72998007019,
+      "pemfc_electricity_kWh": 8.051481651539998e-05,
+      "reconciliation_cost_USD": 0.9010572915946606,
+      "total_emissions_tonnes": 190.56489922642817
+    }
+  },
+  "preedit_sources": [
+    {
+      "bytes": 4860,
+      "path": "paper1_writeup/main.tex",
+      "sha256": "f313c18385b6d99df653c72c96455e561118af255650346bb21c482baf66b53e"
+    },
+    {
+      "bytes": 37065,
+      "path": "paper1_writeup/references.bib",
+      "sha256": "44b882f0c0e41ee29a8886c9436c972c3e916d6d8dc65de014a4723a01a9e1b3"
+    },
+    {
+      "bytes": 4490,
+      "path": "paper1_writeup/sections/01_introduction.tex",
+      "sha256": "53f058aa4119c962b63f888dd76e2410ae5f1ddbd9d390523c13dee789b16d74"
+    },
+    {
+      "bytes": 3807,
+      "path": "paper1_writeup/sections/02_related_work.tex",
+      "sha256": "0d9dcbd775f54e57e39b2177f00e0ab3b602799081619dc4a1eeedcf55519717"
+    },
+    {
+      "bytes": 4421,
+      "path": "paper1_writeup/sections/03_system_model.tex",
+      "sha256": "f8cae888bb5abbd62569f8473f5bd40223cf720e5ee07958874006aa1b6192c8"
+    },
+    {
+      "bytes": 4837,
+      "path": "paper1_writeup/sections/04_ems_formulation.tex",
+      "sha256": "daa89efc3d5624eab17a44e5d846b5c60190235f1024417e268f10287e3d50f2"
+    },
+    {
+      "bytes": 3782,
+      "path": "paper1_writeup/sections/05_experimental_setup.tex",
+      "sha256": "065bbddeaeab9603418c79d5f21c1a887fd65b8ef82b7a42e701514c80bb14cd"
+    },
+    {
+      "bytes": 3694,
+      "path": "paper1_writeup/sections/06_results.tex",
+      "sha256": "308e5508d2b6f2dccc439defdbaa9d610b52c84951e1a803ec6076299bc589cb"
+    },
+    {
+      "bytes": 1494,
+      "path": "paper1_writeup/sections/07_conclusion.tex",
+      "sha256": "46857cd1f750ac2f06237e2ab81e7d47f5e9dca0bcb8f106e35ade13a733911a"
+    },
+    {
+      "bytes": 7152,
+      "path": "paper1_writeup/sections/07_results.tex",
+      "sha256": "bba83a310defc453a16dadc9a28190129f9bf5671dcfc4c27e3f4c27489ffabd"
+    },
+    {
+      "bytes": 4223,
+      "path": "paper1_writeup/sections/08_discussion.tex",
+      "sha256": "0fa895d78d5503623bed282688d53a19492d40ae0cf27cfcc53e7ef928e96848"
+    },
+    {
+      "bytes": 2722,
+      "path": "paper1_writeup/sections/09_limitations.tex",
+      "sha256": "bf8a2a3f72c9be52871314d531f9e74309edca5b9e6044e6db55fc93eaba54b1"
+    },
+    {
+      "bytes": 10231,
+      "path": "paper1_writeup/supplement.tex",
+      "sha256": "748c81924ce15571a73b813151e6602404ccd89cf372191c9fbeea063b158a71"
+    },
+    {
+      "bytes": 1177,
+      "path": "paper1_submission/unconventional_resources/cas_source/BUILD_README.md",
+      "sha256": "5cb11593caee85dee71551896a464cd79f46ee41107ff5d3f814780b7fbb49cd"
+    },
+    {
+      "bytes": 76688,
+      "path": "paper1_submission/unconventional_resources/cas_source/cas-common.sty",
+      "sha256": "e95a01f4b33531d01ade231669fcc1e42f52193dddcb22ead5b63240eb952f8f"
+    },
+    {
+      "bytes": 4410,
+      "path": "paper1_submission/unconventional_resources/cas_source/cas-sc.cls",
+      "sha256": "5030545ed09c770afa31004817bf8626ca7f311cf795e6c2825ecae113bb42e9"
+    },
+    {
+      "bytes": 2067,
+      "path": "paper1_submission/unconventional_resources/cas_source/CAS_TEMPLATE_MANIFEST.txt",
+      "sha256": "a73f1a2366697c58c23ca2b5d6189a86631a6a8a849d3993ca7f330b08a1c671"
+    },
+    {
+      "bytes": 1821,
+      "path": "paper1_submission/unconventional_resources/cas_source/CAS_TEMPLATE_README.txt",
+      "sha256": "d1e082d558435c263a24fa62f36e9f25a6189cfa63373036f74d404847125b4b"
+    },
+    {
+      "bytes": 29126,
+      "path": "paper1_submission/unconventional_resources/cas_source/figures/FIGURE_1_PHYSICAL_ACCOUNTING_ARCHITECTURE.pdf",
+      "sha256": "9ba6c14972c25729fe1e257c3f4d81a9b45e1b86c6448f984e8410fdceba58ca"
+    },
+    {
+      "bytes": 21968,
+      "path": "paper1_submission/unconventional_resources/cas_source/figures/FIGURE_2_ANNUAL_OPERATING_REGIMES.pdf",
+      "sha256": "549aac5a98fa9639c885baf1b59a76e422491bd7ac833393647bc215c2cca315"
+    },
+    {
+      "bytes": 19580,
+      "path": "paper1_submission/unconventional_resources/cas_source/figures/FIGURE_3_RANKING_REVERSAL.pdf",
+      "sha256": "5f308ffebc8c4f28183675c163df486b77ca33124d6918b04a65346491abc44d"
+    },
+    {
+      "bytes": 38844,
+      "path": "paper1_submission/unconventional_resources/cas_source/figures/FIGURE_4_HOURLY_SOH_TRAJECTORIES.pdf",
+      "sha256": "b9815f91e522e20a35e9f4dd6b63c71f5ed2401b4c532c5ba543e9243924e98b"
+    },
+    {
+      "bytes": 5457,
+      "path": "paper1_submission/unconventional_resources/cas_source/main.tex",
+      "sha256": "c8a93245550f6d114cff95805e525d2ff59b7c4ec4ca05e5e05c7a57048a0a83"
+    },
+    {
+      "bytes": 28801,
+      "path": "paper1_submission/unconventional_resources/cas_source/model1-num-names.bst",
+      "sha256": "c799065486f4f11e71724eca88903cbced09260a00c39bb0ea37c3a8a01ea301"
+    },
+    {
+      "bytes": 37065,
+      "path": "paper1_submission/unconventional_resources/cas_source/references.bib",
+      "sha256": "44b882f0c0e41ee29a8886c9436c972c3e916d6d8dc65de014a4723a01a9e1b3"
+    },
+    {
+      "bytes": 4456,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/01_introduction.tex",
+      "sha256": "d2f3b38b1506a8d008d499596049a9227f450826e501b3baf118fd4b421ae850"
+    },
+    {
+      "bytes": 3771,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/02_related_work.tex",
+      "sha256": "b3ae64588fa419f9a738c4ca9ddd7ad79b308e1778df601c9ec27a315f76451c"
+    },
+    {
+      "bytes": 4429,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/03_system_model.tex",
+      "sha256": "aec4c84ce9e90a4c592d4828de0caab3ec7cf7bd635d07592399bb06dc1af818"
+    },
+    {
+      "bytes": 4833,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/04_ems_formulation.tex",
+      "sha256": "d09cf3b96eb6b32be0db3a5dee6a47007c69f8f31b19b994640ea4cdb8581919"
+    },
+    {
+      "bytes": 3782,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/05_experimental_setup.tex",
+      "sha256": "065bbddeaeab9603418c79d5f21c1a887fd65b8ef82b7a42e701514c80bb14cd"
+    },
+    {
+      "bytes": 3698,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/06_results.tex",
+      "sha256": "3354e19f714beace8ec9b3d6d0af5a29ae20b23f972faf6b57e0cf4503435b8b"
+    },
+    {
+      "bytes": 1494,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/07_conclusion.tex",
+      "sha256": "46857cd1f750ac2f06237e2ab81e7d47f5e9dca0bcb8f106e35ade13a733911a"
+    },
+    {
+      "bytes": 7172,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/07_results.tex",
+      "sha256": "124b71bb0850b16189feabc37e19fb9d8663e18aea127eb1fa1f0bdd914631ed"
+    },
+    {
+      "bytes": 4223,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/08_discussion.tex",
+      "sha256": "0fa895d78d5503623bed282688d53a19492d40ae0cf27cfcc53e7ef928e96848"
+    },
+    {
+      "bytes": 2722,
+      "path": "paper1_submission/unconventional_resources/cas_source/sections/09_limitations.tex",
+      "sha256": "bf8a2a3f72c9be52871314d531f9e74309edca5b9e6044e6db55fc93eaba54b1"
+    },
+    {
+      "bytes": 10514,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplement.tex",
+      "sha256": "d84917fe489e1711d384a9f6095fc8fc2daec07176cbb107dbdc8a100f243e5d"
+    },
+    {
+      "bytes": 19383,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplementary_figures/FIGURE_S1_MONTHLY_OPERATIONAL_PROFILES.pdf",
+      "sha256": "85b5b8f766a7198d1b6da4ef160525ab47b3d91379f13012effd59f12b0a6879"
+    },
+    {
+      "bytes": 29658,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplementary_figures/FIGURE_S2_POWER_DURATION_CURVES.pdf",
+      "sha256": "8513653d1846ede88b3d255b352b3629f6e6c7abfe3a4d4b0d89e4e81a38016c"
+    },
+    {
+      "bytes": 23654,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplementary_figures/FIGURE_S3_STATE_DURATION_CURVES.pdf",
+      "sha256": "3f8bfa8116bc3ce815148dda2ab2ccf2855b372264c77f143f3f09d69ffa95e2"
+    },
+    {
+      "bytes": 16565,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplementary_figures/FIGURE_S4_RECONCILIATION_DISTRIBUTIONS.pdf",
+      "sha256": "73be8e04bce82575fe593ad21aba7da4afced82783e553ecc2defd992485be3f"
+    },
+    {
+      "bytes": 14719,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplementary_figures/FIGURE_S5_SOLVER_ROUTE_DISTRIBUTIONS.pdf",
+      "sha256": "8d1debe34bdf771da814e7dd7ea791323981ff7b1fe7f1e9e6b9913e8a7df477"
+    },
+    {
+      "bytes": 2647,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplementary_tables/TABLE_S3_MONTHLY_SELECTED.tex",
+      "sha256": "e6b21b310c35d24daf711577322d7175c9b51a595ff1d7c6e09646e0c5f11c3e"
+    },
+    {
+      "bytes": 3996,
+      "path": "paper1_submission/unconventional_resources/cas_source/supplementary_tables/TABLE_S6_CARBON_DELTA.tex",
+      "sha256": "55a6a76ec49ed817064de7c5276c81624db31c4a76d1dc704cc62e2a35b86274"
+    },
+    {
+      "bytes": 8764,
+      "path": "paper1_submission/unconventional_resources/cas_source/thumbnails/cas-email.jpeg",
+      "sha256": "51cadbff5919f51f76f6f9238b18c9b5d512ea9234cb6d7fef7b53d9767fa845"
+    },
+    {
+      "bytes": 3676,
+      "path": "paper1_submission/unconventional_resources/cas_source/thumbnails/cas-facebook.jpeg",
+      "sha256": "ee892a2efc41325af58c7aa5c9356249d68524e796ed2e2da391652a9d2e4294"
+    },
+    {
+      "bytes": 7946,
+      "path": "paper1_submission/unconventional_resources/cas_source/thumbnails/cas-gplus.jpeg",
+      "sha256": "7a903863812ac3b33d64c5f774ea549793d2657880874ca6e7d4243f5a51516b"
+    },
+    {
+      "bytes": 6124,
+      "path": "paper1_submission/unconventional_resources/cas_source/thumbnails/cas-linkedin.jpeg",
+      "sha256": "3fa7b9ead03ed5d1976316aa1d69157eeeaefae04fab568a4d704185755f7f9f"
+    },
+    {
+      "bytes": 4655,
+      "path": "paper1_submission/unconventional_resources/cas_source/thumbnails/cas-twitter.jpeg",
+      "sha256": "bf2765da8cc4cc58fef109fd0f864b4fc39d7ba8e8040c8633542076ccdc91ef"
+    },
+    {
+      "bytes": 7736,
+      "path": "paper1_submission/unconventional_resources/cas_source/thumbnails/cas-url.jpeg",
+      "sha256": "66e3c16ef98e082d61397c9644ccae92c227bae49fd7eba5bcad4a6623fd67d5"
+    }
+  ],
+  "prohibited_scientific_actions_executed": 0,
+  "purpose": "single source of exact reporting metrics and predeclared rounding rules for the final presubmission correction",
+  "reviewer_discrepancy_identity": {
+    "C2_peak_import_kWh": 159343.04298705925,
+    "absolute_difference_USD": 7.275957614183426e-12,
+    "interpretation": "peak-period import-tariff surcharge",
+    "product_USD": 4134.951965514188,
+    "reviewer_value_USD": 4134.95196551418,
+    "tariff_increment_USD_per_kWh": 0.02595
+  },
+  "rounding_rules_frozen_before_drafting": {
+    "annual_energy": "nearest kWh or 0.1 MWh",
+    "economics_USD": "nearest whole USD; cents only for genuinely small deltas",
+    "evidence_files": "retain full source precision",
+    "hydrogen_kg": "2-3 decimals",
+    "operational_grid_import_emissions_tCO2": "3-4 decimals",
+    "pemfc_physical_maximum_narrative_kW": 177.088,
+    "percentages": "precision matched to absolute materiality",
+    "power_kW": "2-3 decimals",
+    "residuals": "scientific notation with 2-3 significant figures",
+    "state_of_health": "4 decimals or percent with 2 decimals"
+  },
+  "schema_version": "1.0",
+  "scientific_basis": {
+    "annual_campaign_commit": "6e4032890533cb99b21a913e966d247c9315b7cc",
+    "audit_archive_bytes": 5500745,
+    "audit_archive_identity_expected_bytes": 5500745,
+    "audit_archive_identity_expected_sha256": "085b9bd24e76b8357fccd5fd4d9eb23e186348237ec3299571bf342e423bbf08",
+    "audit_archive_sha256": "085b9bd24e76b8357fccd5fd4d9eb23e186348237ec3299571bf342e423bbf08",
+    "audit_comparison_sha256": "a4addc4c5ae12bfe67ad53c212a0c376422f4469f655e7e4efa9104d8e7d66fc",
+    "audit_full_physical_replay_sha256": "24228fd05792b01b0c1c49d092c4803b23b314bd8133b4244e29841b774e71df",
+    "audit_root_name": "paper1_final_annual_scientific_audit_20260726_072859_UTC",
+    "previous_evidence_preedit_tree_seals": [
+      {
+        "file_count": 53,
+        "ordered_tree_sha256": "e27163f4cec3cbbc2824bb81a3235a1aab303bf5635509456d47e68662772e08",
+        "root_name": "paper1_final_annual_scientific_audit_20260726_072859_UTC",
+        "total_bytes": 35894057
+      },
+      {
+        "file_count": 11,
+        "ordered_tree_sha256": "77d7a8b8267870b35e0125e81a67d17cd9115d717db923b9fd9d46da824c9ef4",
+        "root_name": "review_reconciliation_decision_20260729_001138_UTC",
+        "total_bytes": 69745
+      },
+      {
+        "file_count": 10,
+        "ordered_tree_sha256": "4f6f0eb3a4b3b5cc7141b99dc5db58b4b9674b6cadd8b1654bb2ddff42a3a8cb",
+        "root_name": "audit_restoration_reconstruction_pilot_20260729_185427_UTC",
+        "total_bytes": 1848010
+      },
+      {
+        "file_count": 8,
+        "ordered_tree_sha256": "a7d05af210d6d9926a42b9efab791f490497b606f07c42cec1619762b4e9c0e4",
+        "root_name": "diagnostic_objective_route_repair_20260730_092016_UTC",
+        "total_bytes": 238982
+      },
+      {
+        "file_count": 8,
+        "ordered_tree_sha256": "165023bff1ee0cbc3e7b3e4d27b17401a9455cf27bf8dde536e467d94e50075f",
+        "root_name": "metadata_correction_disjoint_holdout_freeze_20260730_094955_UTC",
+        "total_bytes": 724152
+      },
+      {
+        "file_count": 160,
+        "ordered_tree_sha256": "68e4f1bb9964b5766533a400ac01b85a4e07f245d4c08e58feb6d440fc4ddbb9",
+        "root_name": "final_manuscript_typesetting_correction_20260727_081505_UTC",
+        "total_bytes": 50557121
+      },
+      {
+        "file_count": 17,
+        "ordered_tree_sha256": "e591cfd9c362a1df03ec3c9ebeb22e93a7a984ace288766e41c525bb3cbc77b9",
+        "root_name": "journal_template_conversion_20260728_121042_UTC",
+        "total_bytes": 809449
+      }
+    ],
+    "starting_repository_commit": "98d8ed18f1204690720ec84c6d3b7cd471d728d3"
+  }
+}
