@@ -45,6 +45,19 @@ def test_corrected_figure_4_source_has_all_rows_and_pemel_endpoints() -> None:
         assert float(subset[-1]["pemel_soh"]) == pytest.approx(expected, abs=5e-11)
 
 
+def test_supplementary_table_s6_uses_corrected_pemel_soh() -> None:
+    table = (
+        Path(__file__).resolve().parents[1]
+        / "manuscript_assets"
+        / "TABLE_S6_CARBON_DELTA.tex"
+    ).read_text(encoding="utf-8")
+    assert "0.977184 & 0.977177" in table
+    assert "$-7.104\\times10^{-6}$" in table
+    assert "-0.0007269" in table
+    assert "0.97591689" not in table
+    assert "0.9759094" not in table
+
+
 @pytest.mark.parametrize("module", ["matplotlib", "pypdf"])
 def test_base_dependency_is_importable(module: str) -> None:
     assert importlib.import_module(module) is not None

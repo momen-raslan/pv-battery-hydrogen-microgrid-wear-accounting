@@ -1,10 +1,10 @@
 {
-    "schema_version":  "3.0",
+    "schema_version":  "3.1",
     "package_name":  "pv-battery-hydrogen-microgrid-wear-accounting",
-    "release_tag":  "v1.0.0-submission",
+    "release_tag":  "v1.0.1",
     "package_scope":  "curated reporting layer and manuscript derivatives",
     "file_count_excluding_manifest":  38,
-    "total_bytes_excluding_manifest":  7746426,
+    "total_bytes_excluding_manifest":  7747123,
     "files_excluding_manifest":  [
                                      {
                                          "path":  ".gitignore",
@@ -13,8 +13,8 @@
                                      },
                                      {
                                          "path":  "CITATION.cff",
-                                         "bytes":  809,
-                                         "sha256":  "69c52cd73513e28978b068820262de8b4d3420e53450ab39e64bf454632cfde4"
+                                         "bytes":  797,
+                                         "sha256":  "1cc73ab08f87db3cd670504fa9c5055cea097ac2c6e7221bff01f16ac4eeb072"
                                      },
                                      {
                                          "path":  "data/alexandria_tmy.csv",
@@ -118,8 +118,8 @@
                                      },
                                      {
                                          "path":  "manuscript_assets/TABLE_S6_CARBON_DELTA.tex",
-                                         "bytes":  3996,
-                                         "sha256":  "55a6a76ec49ed817064de7c5276c81624db31c4a76d1dc704cc62e2a35b86274"
+                                         "bytes":  4060,
+                                         "sha256":  "710ee51a0fa9a829fe694b4653c900dc7e6edae714378edce4ab7db62f92afc3"
                                      },
                                      {
                                          "path":  "MANUSCRIPT_TO_ARTIFACT_MAP.md",
@@ -128,8 +128,8 @@
                                      },
                                      {
                                          "path":  "README.md",
-                                         "bytes":  2362,
-                                         "sha256":  "227855a55f517f1ee6505c5e621c9cd99753cbb45af41333d82ab0fbd7161853"
+                                         "bytes":  2584,
+                                         "sha256":  "0f13917d23bba4196a607d257029444df5e388e04eee1f219e6d98be10dfb36a"
                                      },
                                      {
                                          "path":  "reference/FIGURE_2_ANNUAL_REGIMES.csv",
@@ -183,8 +183,8 @@
                                      },
                                      {
                                          "path":  "tests/test_reporting_only.py",
-                                         "bytes":  1977,
-                                         "sha256":  "335cdb959a3a466d140ab92b8bf295b0ac76c27e34205816cce2d45a54d187a6"
+                                         "bytes":  2400,
+                                         "sha256":  "847ce5a037b2e2e777bb825ff7094ea8c533d3ae47bee2fa6dc944a9ba907446"
                                      },
                                      {
                                          "path":  "THIRD_PARTY_NOTICES.md",
@@ -238,5 +238,17 @@
                     "source_url":  "https://re.jrc.ec.europa.eu/api/tmy?lat=31.2\u0026lon=29.919\u0026outputformat=csv",
                     "transformation":  "none; byte-identical official API response",
                     "author_license_applied":  false
-                }
+                },
+    "reporting_correction":  {
+                                 "scope":  "reader-facing Supplementary Table S6 PEMEL SoH and precision correction",
+                                 "previous_immutable_release":  "v1.0.0-submission",
+                                 "previous_release_moved":  false,
+                                 "scientific_values_changed":  false,
+                                 "corrected_pemel_soh":  {
+                                                             "C2":  0.97718442563589314,
+                                                             "C3":  0.9771773221204717,
+                                                             "C3_minus_C2":  -7.1035154214360574E-06,
+                                                             "percent_relative_to_C2":  -0.00072693702796312117
+                                                         }
+                             }
 }

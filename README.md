@@ -1,6 +1,6 @@
 # PV-battery-hydrogen microgrid wear-accounting reporting package
 
-This archived submission release reproduces the curated reporting layer for
+This archived reporting-correction release reproduces the curated reporting layer for
 one fixed, intentionally PV-rich PV--battery--PEMEL--tank--PEMFC case. It does
 not rerun the annual optimization campaign or claim broader sizing, weather,
 tariff, price, or technology robustness.
@@ -22,6 +22,10 @@ The package regenerates Main Tables 3--4 and source data for Main Figures
 V/cell PEMEL end-of-life basis and validates all three terminal values. The
 unavailable historical raw 27-file annual campaign is neither included nor
 claimed to be available.
+
+Version 1.0.1 corrects the reader-facing PEMEL SoH row in Supplementary Table
+S6 and normalizes its displayed precision. The full-precision supporting data
+and scientific calculations are unchanged from v1.0.0-submission.
 
 ## Quick start
 
@@ -50,4 +54,4 @@ curated evidence, and manuscript-derivative assets are licensed under CC BY
 4.0, subject to the exclusions in `LICENSE_SCOPE.md`.
 
 Release record:
-`https://github.com/momen-raslan/pv-battery-hydrogen-microgrid-wear-accounting/releases/tag/v1.0.0-submission`
+`https://github.com/momen-raslan/pv-battery-hydrogen-microgrid-wear-accounting/releases/tag/v1.0.1`
