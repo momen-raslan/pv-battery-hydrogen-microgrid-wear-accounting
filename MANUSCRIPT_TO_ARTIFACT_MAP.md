@@ -6,7 +6,9 @@
   `reference/FIGURE_2_ANNUAL_REGIMES.csv`.
 - Main Figure 3: the direct and common-wear components in the same metric
   dictionary, checked against `reference/FIGURE_3_RANKING_REVERSAL.csv`.
-- Main Figure 4: `evidence/PEMEL_SOH_REPORTING_CORRECTION.csv`.
+- Main Figure 4: `evidence/PEMEL_SOH_REPORTING_CORRECTION.csv`, checked exactly
+  against `reference/FIGURE_4_HOURLY_SOH.csv`, including all three corrected
+  PEMEL endpoints.
 - Hydrogen-shortage statements: `evidence/HYDROGEN_SHORTAGE_RECONCILIATION.csv`.
 - Common-wear crossover: `evidence/COMMON_WEAR_CROSSOVER_CHECK.csv`.
 - Residual threshold table:

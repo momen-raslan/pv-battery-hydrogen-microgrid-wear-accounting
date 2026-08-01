@@ -23,6 +23,11 @@ from pypdf import PdfReader
 
 
 POLICIES = ("C1", "C2", "C3")
+EXPECTED_PEMEL_ENDPOINTS = {
+    "C1": 0.8475178671,
+    "C2": 0.9771844256,
+    "C3": 0.9771773221,
+}
 COLORS = {"C1": "#1f4e79", "C2": "#2e8b57", "C3": "#b35c00"}
 
 
@@ -180,6 +185,28 @@ def figure_4_source(soh: list[dict[str, str]]) -> list[dict[str, Any]]:
     ]
 
 
+def figure_4_endpoint_check(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    observed: dict[str, float] = {}
+    failures = 0
+    for policy, expected in EXPECTED_PEMEL_ENDPOINTS.items():
+        subset = [row for row in rows if row["policy"] == policy]
+        if len(subset) != 8760 or [int(row["hour"]) for row in subset] != list(range(8760)):
+            failures += 1
+            continue
+        endpoint = float(subset[-1]["pemel_soh"])
+        observed[policy] = endpoint
+        failures += int(abs(endpoint - expected) > 5e-11)
+    return {
+        "mode": "explicit Figure 4 source-CSV endpoint validation",
+        "pemel_eol_basis_V_per_cell": 0.19,
+        "expected": EXPECTED_PEMEL_ENDPOINTS,
+        "observed": observed,
+        "absolute_tolerance": 5e-11,
+        "failures": failures,
+        "status": "PASS" if failures == 0 else "FAIL",
+    }
+
+
 def compare_exact(generated: list[dict[str, Any]], expected: list[dict[str, str]]) -> dict[str, Any]:
     fields = list(expected[0]) if expected else []
     normalized = [{field: str(row[field]) for field in fields} for row in generated]
@@ -335,12 +362,11 @@ def main() -> None:
             ("policy", "component"),
             5e-6,
         ),
-        "Main Figure 4 source": {
-            "mode": "exact projection from sealed 26,280-row reporting-correction evidence",
-            "rows": len(f4),
-            "expected_rows": 26280,
-            "status": "PASS" if len(f4) == 26280 else "FAIL",
-        },
+        "Main Figure 4 source": compare_exact(
+            f4,
+            read_csv(root / "reference" / "FIGURE_4_HOURLY_SOH.csv"),
+        ),
+        "Main Figure 4 corrected PEMEL endpoints": figure_4_endpoint_check(f4),
     }
     status = "PASS" if all(item["status"] == "PASS" for item in comparisons.values()) else "FAIL"
     report_path = output / "REPRODUCTION_CHECK.json"
@@ -352,6 +378,9 @@ def main() -> None:
         "solver_calls": 0,
         "simulation_calls": 0,
         "optimization_calls": 0,
+        "sensitivity_calls": 0,
+        "annual_campaign_calls": 0,
+        "holdout_calls": 0,
         "comparisons": comparisons,
         "input_sha256": {
             name: sha256(root / "evidence" / name)
@@ -383,4 +412,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

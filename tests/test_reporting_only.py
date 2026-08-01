@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import importlib
 import ast
+import csv
+from pathlib import Path
 
 import pytest
 
@@ -30,6 +32,17 @@ def test_reporting_module_has_no_solver_or_simulator_import() -> None:
             imported.append(node.module or "")
     forbidden = {"gurobipy", "pyomo", "optimizer_mpc", "main_simulation"}
     assert forbidden.isdisjoint(imported)
+
+
+def test_corrected_figure_4_source_has_all_rows_and_pemel_endpoints() -> None:
+    source = Path(__file__).resolve().parents[1] / "reference" / "FIGURE_4_HOURLY_SOH.csv"
+    with source.open("r", encoding="utf-8", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    assert len(rows) == 26280
+    for policy, expected in reproduce_manuscript_artifacts.EXPECTED_PEMEL_ENDPOINTS.items():
+        subset = [row for row in rows if row["policy"] == policy]
+        assert [int(row["hour"]) for row in subset] == list(range(8760))
+        assert float(subset[-1]["pemel_soh"]) == pytest.approx(expected, abs=5e-11)
 
 
 @pytest.mark.parametrize("module", ["matplotlib", "pypdf"])

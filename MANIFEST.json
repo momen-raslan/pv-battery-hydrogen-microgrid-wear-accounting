@@ -1,229 +1,242 @@
 {
-  "absolute_windows_path_scan": {
-    "hits": [],
-    "status": "PASS"
-  },
-  "annual_campaign_calls": 0,
-  "author_telephone_scan": {
-    "hits": [],
-    "status": "PASS"
-  },
-  "file_count_excluding_manifest": 37,
-  "files_excluding_manifest": [
-    {
-      "bytes": 57,
-      "path": ".gitignore",
-      "sha256": "6265fe2703140c2158c3c0141ab82b388c443c9f4208646e57002f13874c29b4"
-    },
-    {
-      "bytes": 589,
-      "path": "CITATION.cff",
-      "sha256": "f1e79abecbb2d8e4ea8e38db57b158a76f248cb81c4dbdb3cafd1171aaf897ac"
-    },
-    {
-      "bytes": 598052,
-      "path": "data/alexandria_tmy.csv",
-      "sha256": "9910a98114157bccaae7091d3e9a51a44a267d8476008722ac6d12c36189b5de"
-    },
-    {
-      "bytes": 397,
-      "path": "ENVIRONMENT.md",
-      "sha256": "f7297859a745b845c5aec301c560260fdcd7932592d4d05b932fb76869914601"
-    },
-    {
-      "bytes": 23420,
-      "path": "evidence/AUTHORITATIVE_METRIC_DICTIONARY.json",
-      "sha256": "95fbd7a76288c4f3da46cd57561fdecbf3b79ef0d609bbf71f9c8634fa8151a6"
-    },
-    {
-      "bytes": 326,
-      "path": "evidence/COMMON_WEAR_CROSSOVER_CHECK.csv",
-      "sha256": "9bb9d437b8e4f3680ac35e5bed03b7c3f0c9649ab84c3c02a5a176213428763c"
-    },
-    {
-      "bytes": 1367,
-      "path": "evidence/DIRECT_LEDGER_RECONCILIATION.csv",
-      "sha256": "480d1887399c3c07f554b6b86e8e107c10747d70e8afe2ac0b739cd831be7aba"
-    },
-    {
-      "bytes": 29067,
-      "path": "evidence/HYDROGEN_SHORTAGE_RECONCILIATION.csv",
-      "sha256": "6ad7c0e4c980e3b973ca5fc22b0f586795b61dbf79799948f5b761f72b873665"
-    },
-    {
-      "bytes": 5311,
-      "path": "evidence/LITERATURE_VERIFICATION_MATRIX.csv",
-      "sha256": "2c361d486db9725d66dd0cda58666800271dcd5e0988ea838f45fd48b4705fa2"
-    },
-    {
-      "bytes": 4202,
-      "path": "evidence/MODEL_AND_PARAMETER_DISCLOSURE_CHECK.csv",
-      "sha256": "ddca429a2fcd5c748907f5ea88df803dfff4f43143520f5eb90cd9b6cbc5c1ed"
-    },
-    {
-      "bytes": 1955,
-      "path": "evidence/PEMEL_SOH_IMMUTABILITY_CHECK.json",
-      "sha256": "3571311ee6d6453235bf06dad01ab63c28cbffdb0e13b7f236b99790138d561a"
-    },
-    {
-      "bytes": 5194658,
-      "path": "evidence/PEMEL_SOH_REPORTING_CORRECTION.csv",
-      "sha256": "af2d38c3499ac8d3a4e46cd2b82082208c3864bf0a50c7bf0f394300a345b33e"
-    },
-    {
-      "bytes": 474,
-      "path": "evidence/SUPPLEMENTARY_RESIDUAL_THRESHOLD_TABLE.csv",
-      "sha256": "dfed26be86c9136904335ac12bbbcf0309ed3dbdf148133d09e159a93a5537bc"
-    },
-    {
-      "bytes": 816,
-      "path": "INPUT_DATA_PROVENANCE.md",
-      "sha256": "024a3d722b3eec08c5398646bbd55e5ab66d2e62f75f11ad6b81ee9619cf8f8c"
-    },
-    {
-      "bytes": 1117,
-      "path": "LICENSE",
-      "sha256": "9de390f4454918d25c7d11749daa4958709cc89eff144b8bfde3f540e5dfb58b"
-    },
-    {
-      "bytes": 743,
-      "path": "LICENSE-DATA-DOCS",
-      "sha256": "f4c2da79a3e78995fdaac3f77612752c96755d953ded379df2c540206f161332"
-    },
-    {
-      "bytes": 996,
-      "path": "LICENSE_SCOPE.md",
-      "sha256": "4dd4146bad19aa4728cbf0aa0a9a7edf584ca45a10f0039eaa23e6a8e6893b53"
-    },
-    {
-      "bytes": 29126,
-      "path": "manuscript_assets/FIGURE_1_PHYSICAL_ACCOUNTING_ARCHITECTURE.pdf",
-      "sha256": "9ba6c14972c25729fe1e257c3f4d81a9b45e1b86c6448f984e8410fdceba58ca"
-    },
-    {
-      "bytes": 21968,
-      "path": "manuscript_assets/FIGURE_2_ANNUAL_OPERATING_REGIMES.pdf",
-      "sha256": "549aac5a98fa9639c885baf1b59a76e422491bd7ac833393647bc215c2cca315"
-    },
-    {
-      "bytes": 19580,
-      "path": "manuscript_assets/FIGURE_3_RANKING_REVERSAL.pdf",
-      "sha256": "5f308ffebc8c4f28183675c163df486b77ca33124d6918b04a65346491abc44d"
-    },
-    {
-      "bytes": 588027,
-      "path": "manuscript_assets/FIGURE_4_HOURLY_SOH_TRAJECTORIES_CORRECTED.pdf",
-      "sha256": "1b2131b0739a3d3be7ee90ab6448e4107ed686d5afb6942c23e3c2c0ad0eaf28"
-    },
-    {
-      "bytes": 2647,
-      "path": "manuscript_assets/TABLE_S3_MONTHLY_SELECTED.tex",
-      "sha256": "e6b21b310c35d24daf711577322d7175c9b51a595ff1d7c6e09646e0c5f11c3e"
-    },
-    {
-      "bytes": 3996,
-      "path": "manuscript_assets/TABLE_S6_CARBON_DELTA.tex",
-      "sha256": "55a6a76ec49ed817064de7c5276c81624db31c4a76d1dc704cc62e2a35b86274"
-    },
-    {
-      "bytes": 1032,
-      "path": "MANUSCRIPT_TO_ARTIFACT_MAP.md",
-      "sha256": "817fbd5acd637a2efe2aebe677ab4f13cbf6873cdc080b3f64c58c3fea5df8fa"
-    },
-    {
-      "bytes": 1455,
-      "path": "README.md",
-      "sha256": "449d7606ab661ab67892acc3b87c8f3cac4cc5cf4828316f2e5dca47147f8d31"
-    },
-    {
-      "bytes": 422,
-      "path": "reference/FIGURE_2_ANNUAL_REGIMES.csv",
-      "sha256": "1594e649bc106aced549078067125ee850cc54011e5fb84336977a70f5f76688"
-    },
-    {
-      "bytes": 848,
-      "path": "reference/FIGURE_3_RANKING_REVERSAL.csv",
-      "sha256": "1a8d087c30830452d7c2cfe49df46ccc0417bb9984c7fa3d0d111f3de9754560"
-    },
-    {
-      "bytes": 396,
-      "path": "reference/MAIN_TABLE_3.csv",
-      "sha256": "0c0b5705972a8852b5b806eadffaa3e69856e3423391c93bbdd1dba7a67300c6"
-    },
-    {
-      "bytes": 505,
-      "path": "reference/MAIN_TABLE_4.csv",
-      "sha256": "7183408b1f3e3f29a05f232f3b61b86043775f3525f2f5bb55a3702077557db2"
-    },
-    {
-      "bytes": 1109,
-      "path": "REPRODUCE.md",
-      "sha256": "1e6b76c05b192d67493612c50f7062aba8c3b7ed0509027b8d6121d1452473a1"
-    },
-    {
-      "bytes": 45,
-      "path": "requirements.txt",
-      "sha256": "ac6901e048d8044a54b4b6bc99fa02e7df12693da65c3e56a05e02989b7e14d2"
-    },
-    {
-      "bytes": 56,
-      "path": "src/__init__.py",
-      "sha256": "ce78c397732aa80d80b61e1ba4cee9d788c4617e742b34a1eb6e0347953bc1e6"
-    },
-    {
-      "bytes": 599,
-      "path": "src/reporting_only.py",
-      "sha256": "3997aa24c0efa3eaa75686a94bf550713ce6ef11a4429ecb23a2bc5113c27eff"
-    },
-    {
-      "bytes": 14456,
-      "path": "src/reproduce_manuscript_artifacts.py",
-      "sha256": "2bab9c66db3145c61954db812a6f9eefe56b3c70a00945fd6de31f446e1e4ea0"
-    },
-    {
-      "bytes": 1312,
-      "path": "tests/test_reporting_only.py",
-      "sha256": "f00d8761f3881dc69202d44bfea1725cde6f78f41d6c8bc4b86834764be485e7"
-    },
-    {
-      "bytes": 1091,
-      "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "c5eb0e81d1ae3543ecba8f93c4386785c7255acef93862444877bf53b2377f2b"
-    },
-    {
-      "bytes": 509,
-      "path": "WEATHER_RETRIEVAL.md",
-      "sha256": "06db2878679ea99088a312ca52cc242bd4c654bab0788e4579d2b46f55728adc"
-    }
-  ],
-  "holdout_calls": 0,
-  "license_files_present": true,
-  "optimization_calls": 0,
-  "original_27_file_annual_campaign_included": false,
-  "original_annual_campaign_regenerated": false,
-  "package_scope": "curated reporting layer and manuscript derivatives",
-  "publisher_cas_files_present": false,
-  "schema_version": "2.0",
-  "secret_scan": {
-    "hits": {
-      "aws_access_key": [],
-      "github_personal_access_token": [],
-      "gurobi_license_assignment": [],
-      "private_key": []
-    },
-    "status": "PASS"
-  },
-  "sensitivity_calls": 0,
-  "simulation_calls": 0,
-  "solver_calls": 0,
-  "total_bytes_excluding_manifest": 6552726,
-  "weather": {
-    "author_license_applied": false,
-    "bytes": 598052,
-    "included": true,
-    "path": "data/alexandria_tmy.csv",
-    "sha256": "9910a98114157bccaae7091d3e9a51a44a267d8476008722ac6d12c36189b5de",
-    "source_url": "https://re.jrc.ec.europa.eu/api/tmy?lat=31.2&lon=29.919&outputformat=csv",
-    "transformation": "none; byte-identical official API response"
-  }
+    "schema_version":  "3.0",
+    "package_name":  "pv-battery-hydrogen-microgrid-wear-accounting",
+    "release_tag":  "v1.0.0-submission",
+    "package_scope":  "curated reporting layer and manuscript derivatives",
+    "file_count_excluding_manifest":  38,
+    "total_bytes_excluding_manifest":  7746426,
+    "files_excluding_manifest":  [
+                                     {
+                                         "path":  ".gitignore",
+                                         "bytes":  57,
+                                         "sha256":  "6265fe2703140c2158c3c0141ab82b388c443c9f4208646e57002f13874c29b4"
+                                     },
+                                     {
+                                         "path":  "CITATION.cff",
+                                         "bytes":  809,
+                                         "sha256":  "69c52cd73513e28978b068820262de8b4d3420e53450ab39e64bf454632cfde4"
+                                     },
+                                     {
+                                         "path":  "data/alexandria_tmy.csv",
+                                         "bytes":  598052,
+                                         "sha256":  "9910a98114157bccaae7091d3e9a51a44a267d8476008722ac6d12c36189b5de"
+                                     },
+                                     {
+                                         "path":  "ENVIRONMENT.md",
+                                         "bytes":  386,
+                                         "sha256":  "5cce28f794dc5a24cc8acefdd0caac11aec65ce068242cb73b8a4e61c5b0d3d7"
+                                     },
+                                     {
+                                         "path":  "evidence/AUTHORITATIVE_METRIC_DICTIONARY.json",
+                                         "bytes":  23420,
+                                         "sha256":  "95fbd7a76288c4f3da46cd57561fdecbf3b79ef0d609bbf71f9c8634fa8151a6"
+                                     },
+                                     {
+                                         "path":  "evidence/COMMON_WEAR_CROSSOVER_CHECK.csv",
+                                         "bytes":  326,
+                                         "sha256":  "9bb9d437b8e4f3680ac35e5bed03b7c3f0c9649ab84c3c02a5a176213428763c"
+                                     },
+                                     {
+                                         "path":  "evidence/DIRECT_LEDGER_RECONCILIATION.csv",
+                                         "bytes":  1367,
+                                         "sha256":  "480d1887399c3c07f554b6b86e8e107c10747d70e8afe2ac0b739cd831be7aba"
+                                     },
+                                     {
+                                         "path":  "evidence/HYDROGEN_SHORTAGE_RECONCILIATION.csv",
+                                         "bytes":  29067,
+                                         "sha256":  "6ad7c0e4c980e3b973ca5fc22b0f586795b61dbf79799948f5b761f72b873665"
+                                     },
+                                     {
+                                         "path":  "evidence/LITERATURE_VERIFICATION_MATRIX.csv",
+                                         "bytes":  5311,
+                                         "sha256":  "2c361d486db9725d66dd0cda58666800271dcd5e0988ea838f45fd48b4705fa2"
+                                     },
+                                     {
+                                         "path":  "evidence/MODEL_AND_PARAMETER_DISCLOSURE_CHECK.csv",
+                                         "bytes":  4202,
+                                         "sha256":  "ddca429a2fcd5c748907f5ea88df803dfff4f43143520f5eb90cd9b6cbc5c1ed"
+                                     },
+                                     {
+                                         "path":  "evidence/PEMEL_SOH_IMMUTABILITY_CHECK.json",
+                                         "bytes":  1955,
+                                         "sha256":  "3571311ee6d6453235bf06dad01ab63c28cbffdb0e13b7f236b99790138d561a"
+                                     },
+                                     {
+                                         "path":  "evidence/PEMEL_SOH_REPORTING_CORRECTION.csv",
+                                         "bytes":  5194658,
+                                         "sha256":  "af2d38c3499ac8d3a4e46cd2b82082208c3864bf0a50c7bf0f394300a345b33e"
+                                     },
+                                     {
+                                         "path":  "evidence/SUPPLEMENTARY_RESIDUAL_THRESHOLD_TABLE.csv",
+                                         "bytes":  474,
+                                         "sha256":  "dfed26be86c9136904335ac12bbbcf0309ed3dbdf148133d09e159a93a5537bc"
+                                     },
+                                     {
+                                         "path":  "INPUT_DATA_PROVENANCE.md",
+                                         "bytes":  816,
+                                         "sha256":  "024a3d722b3eec08c5398646bbd55e5ab66d2e62f75f11ad6b81ee9619cf8f8c"
+                                     },
+                                     {
+                                         "path":  "LICENSE",
+                                         "bytes":  1117,
+                                         "sha256":  "9de390f4454918d25c7d11749daa4958709cc89eff144b8bfde3f540e5dfb58b"
+                                     },
+                                     {
+                                         "path":  "LICENSE_SCOPE.md",
+                                         "bytes":  996,
+                                         "sha256":  "4dd4146bad19aa4728cbf0aa0a9a7edf584ca45a10f0039eaa23e6a8e6893b53"
+                                     },
+                                     {
+                                         "path":  "LICENSE-DATA-DOCS",
+                                         "bytes":  743,
+                                         "sha256":  "f4c2da79a3e78995fdaac3f77612752c96755d953ded379df2c540206f161332"
+                                     },
+                                     {
+                                         "path":  "manuscript_assets/FIGURE_1_PHYSICAL_ACCOUNTING_ARCHITECTURE.pdf",
+                                         "bytes":  44646,
+                                         "sha256":  "f9daf780e429c3556d12a07f2eaba784d23297e90411dfc92f1b13db569439f7"
+                                     },
+                                     {
+                                         "path":  "manuscript_assets/FIGURE_2_ANNUAL_OPERATING_REGIMES.pdf",
+                                         "bytes":  53756,
+                                         "sha256":  "76b8fbfba6ff6f62528552d36d3f7c42d5f8af813baa5275d852b5bf0b222924"
+                                     },
+                                     {
+                                         "path":  "manuscript_assets/FIGURE_3_RANKING_REVERSAL.pdf",
+                                         "bytes":  55451,
+                                         "sha256":  "770d1caaa300c45456b8ac01ca180704f5b2f2aff6f90b86af07b44bf6b3ddaa"
+                                     },
+                                     {
+                                         "path":  "manuscript_assets/FIGURE_4_HOURLY_SOH_TRAJECTORIES_CORRECTED.pdf",
+                                         "bytes":  50779,
+                                         "sha256":  "b26fc06091741105c44ccd65ff690acd7fa0a8929a913f4e2924c9bffba86cd5"
+                                     },
+                                     {
+                                         "path":  "manuscript_assets/TABLE_S3_MONTHLY_SELECTED.tex",
+                                         "bytes":  2647,
+                                         "sha256":  "e6b21b310c35d24daf711577322d7175c9b51a595ff1d7c6e09646e0c5f11c3e"
+                                     },
+                                     {
+                                         "path":  "manuscript_assets/TABLE_S6_CARBON_DELTA.tex",
+                                         "bytes":  3996,
+                                         "sha256":  "55a6a76ec49ed817064de7c5276c81624db31c4a76d1dc704cc62e2a35b86274"
+                                     },
+                                     {
+                                         "path":  "MANUSCRIPT_TO_ARTIFACT_MAP.md",
+                                         "bytes":  1144,
+                                         "sha256":  "c4609b7372d964d3810f3a88861d720d826376fe0cb8aad3758235f28150ae1c"
+                                     },
+                                     {
+                                         "path":  "README.md",
+                                         "bytes":  2362,
+                                         "sha256":  "227855a55f517f1ee6505c5e621c9cd99753cbb45af41333d82ab0fbd7161853"
+                                     },
+                                     {
+                                         "path":  "reference/FIGURE_2_ANNUAL_REGIMES.csv",
+                                         "bytes":  422,
+                                         "sha256":  "1594e649bc106aced549078067125ee850cc54011e5fb84336977a70f5f76688"
+                                     },
+                                     {
+                                         "path":  "reference/FIGURE_3_RANKING_REVERSAL.csv",
+                                         "bytes":  848,
+                                         "sha256":  "1a8d087c30830452d7c2cfe49df46ccc0417bb9984c7fa3d0d111f3de9754560"
+                                     },
+                                     {
+                                         "path":  "reference/FIGURE_4_HOURLY_SOH.csv",
+                                         "bytes":  1644653,
+                                         "sha256":  "19607c6fe40baead1184fce9974be6252908207a439fe66fbc2d4c14572ea4de"
+                                     },
+                                     {
+                                         "path":  "reference/MAIN_TABLE_3.csv",
+                                         "bytes":  396,
+                                         "sha256":  "0c0b5705972a8852b5b806eadffaa3e69856e3423391c93bbdd1dba7a67300c6"
+                                     },
+                                     {
+                                         "path":  "reference/MAIN_TABLE_4.csv",
+                                         "bytes":  505,
+                                         "sha256":  "7183408b1f3e3f29a05f232f3b61b86043775f3525f2f5bb55a3702077557db2"
+                                     },
+                                     {
+                                         "path":  "REPRODUCE.md",
+                                         "bytes":  1304,
+                                         "sha256":  "1d202fefe6d768364472492c74d597b51e4a048efc2c0b48814c01f6c82c3f70"
+                                     },
+                                     {
+                                         "path":  "requirements.txt",
+                                         "bytes":  45,
+                                         "sha256":  "ac6901e048d8044a54b4b6bc99fa02e7df12693da65c3e56a05e02989b7e14d2"
+                                     },
+                                     {
+                                         "path":  "src/__init__.py",
+                                         "bytes":  56,
+                                         "sha256":  "ce78c397732aa80d80b61e1ba4cee9d788c4617e742b34a1eb6e0347953bc1e6"
+                                     },
+                                     {
+                                         "path":  "src/reporting_only.py",
+                                         "bytes":  599,
+                                         "sha256":  "3997aa24c0efa3eaa75686a94bf550713ce6ef11a4429ecb23a2bc5113c27eff"
+                                     },
+                                     {
+                                         "path":  "src/reproduce_manuscript_artifacts.py",
+                                         "bytes":  15484,
+                                         "sha256":  "70fac0359e193df758682f7a8d3cdf7fd53d7e4d00bb8d9c16daf1b4a1db599e"
+                                     },
+                                     {
+                                         "path":  "tests/test_reporting_only.py",
+                                         "bytes":  1977,
+                                         "sha256":  "335cdb959a3a466d140ab92b8bf295b0ac76c27e34205816cce2d45a54d187a6"
+                                     },
+                                     {
+                                         "path":  "THIRD_PARTY_NOTICES.md",
+                                         "bytes":  1091,
+                                         "sha256":  "c5eb0e81d1ae3543ecba8f93c4386785c7255acef93862444877bf53b2377f2b"
+                                     },
+                                     {
+                                         "path":  "WEATHER_RETRIEVAL.md",
+                                         "bytes":  509,
+                                         "sha256":  "06db2878679ea99088a312ca52cc242bd4c654bab0788e4579d2b46f55728adc"
+                                     }
+                                 ],
+    "excluded_patterns":  [
+                              "MANIFEST.json",
+                              "__pycache__/",
+                              ".pytest_cache/",
+                              ".venv/",
+                              "reproduced/",
+                              "*.pyc",
+                              "*.pyo"
+                          ],
+    "license_files_present":  true,
+    "publisher_cas_files_present":  false,
+    "original_27_file_annual_campaign_included":  false,
+    "original_annual_campaign_regenerated":  false,
+    "solver_calls":  0,
+    "optimization_calls":  0,
+    "simulation_calls":  0,
+    "sensitivity_calls":  0,
+    "annual_campaign_calls":  0,
+    "holdout_calls":  0,
+    "privacy_security_scan":  {
+                                  "status":  "PASS",
+                                  "github_token_hits":  0,
+                                  "api_key_hits":  0,
+                                  "password_assignment_hits":  0,
+                                  "private_key_hits":  0,
+                                  "connection_string_hits":  0,
+                                  "telephone_hits":  0,
+                                  "absolute_windows_path_hits":  0,
+                                  "user_profile_path_hits":  0,
+                                  "authentication_file_hits":  0,
+                                  "cache_file_hits":  0,
+                                  "hidden_environment_file_hits":  0
+                              },
+    "weather":  {
+                    "included":  true,
+                    "path":  "data/alexandria_tmy.csv",
+                    "bytes":  598052,
+                    "sha256":  "9910a98114157bccaae7091d3e9a51a44a267d8476008722ac6d12c36189b5de",
+                    "source_url":  "https://re.jrc.ec.europa.eu/api/tmy?lat=31.2\u0026lon=29.919\u0026outputformat=csv",
+                    "transformation":  "none; byte-identical official API response",
+                    "author_license_applied":  false
+                }
 }
