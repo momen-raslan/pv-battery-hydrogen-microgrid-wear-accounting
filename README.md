@@ -1,5 +1,10 @@
 # PV-battery-hydrogen microgrid wear-accounting reporting package
 
+> [!WARNING]
+> **Superseded — do not cite**
+>
+> This pre-submission release is superseded and must not be cited. A subsequent forensic audit identified invalid PV irradiance transposition and numerical near-zero PEMFC operation being counted as physical on-time. Corrected annual results are in preparation.
+
 This archived reporting-correction release reproduces the curated reporting layer for
 one fixed, intentionally PV-rich PV--battery--PEMEL--tank--PEMFC case. It does
 not rerun the annual optimization campaign or claim broader sizing, weather,
